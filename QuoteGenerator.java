@@ -27,7 +27,7 @@ class Generator extends JFrame{
 		btnWork.setFont(f);
 		taMsg.setFont(f);
 	
-		//setBounds
+		
 		btnCoding.setBounds(100,100,600,100);
 		btnConfidence.setBounds(100,250,600,100);
 		btnHappy.setBounds(800,100,600,100);
