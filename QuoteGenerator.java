@@ -74,7 +74,7 @@ class Generator extends JFrame{
 		try{
 			DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
 			String url = "jdbc:mysql://localhost:3306/quotes_july25";
-			Connection con = DriverManager.getConnection(url,"root","root");
+			Connection con = DriverManager.getConnection(url,"root",{your_password});
 			
 			String sql = "select * from quotes where category =  'confidence' order by RAND() LIMIT 1";
 			PreparedStatement pst = con.prepareStatement(sql);
